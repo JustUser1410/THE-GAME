@@ -169,10 +169,10 @@ void Help(int *value)
   keypad(help_win, TRUE);          // Enable keyboard input
   box(help_win, 0, 0);             // Put a box around the wimdow
   // Add title
-  print_in_middle(win_win, 1, 0, 50, "HELP", COLOR_PAIR(1));
-  mvwaddch(win_win, 2, 0, ACS_LTEE);
-  mvwhline(win_win, 2, 1, ACS_HLINE, 48);
-  mvwaddch(win_win, 2, 39, ACS_RTEE);
+  print_in_middle(help_win, 1, 0, 50, "HELP", COLOR_PAIR(1));
+  mvwaddch(help_win, 2, 0, ACS_LTEE);
+  mvwhline(help_win, 2, 1, ACS_HLINE, 48);
+  mvwaddch(help_win, 2, 39, ACS_RTEE);
   // Add text
   mvwaddstr(help_win, 3, 2, "WE BOTH KNOW YOU DON'T NEED HELP! ");
   mvwaddstr(help_win, 4, 2, "JUST GO AND PLAY");
@@ -196,10 +196,10 @@ void Play(int *value)
   keypad(game_win, TRUE);           // Enable keyboard input
   box(game_win, 0, 0);              // Put a box around the wimdow
   // Add title
-  print_in_middle(win_win, 1, 0, 50, "THE GAME", COLOR_PAIR(1));
-  mvwaddch(win_win, 2, 0, ACS_LTEE);
-  mvwhline(win_win, 2, 1, ACS_HLINE, 48);
-  mvwaddch(win_win, 2, 39, ACS_RTEE);
+  print_in_middle(game_win, 1, 0, 50, "THE GAME", COLOR_PAIR(1));
+  mvwaddch(game_win, 2, 0, ACS_LTEE);
+  mvwhline(game_win, 2, 1, ACS_HLINE, 48);
+  mvwaddch(game_win, 2, 39, ACS_RTEE);
   //sleep(500);
   //Add text
   mvwaddstr(game_win, 2, 2, "This is it, the faith of the whole world is in");
